@@ -1,4 +1,4 @@
-FROM grafana/grafana-oss:${VERSION}
+FROM grafana/grafana-oss:latest
 
 # Define the build arguments
 ARG PORT
