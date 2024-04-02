@@ -1,3 +1,5 @@
+FROM grafana/grafana-oss:${VERSION}
+
 # Define the build arguments
 ARG PORT
 ARG VERSION
@@ -16,8 +18,6 @@ ENV GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
 ENV GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
 ENV GF_INSTALL_PLUGINS=${GF_INSTALL_PLUGINS}
 ENV GF_LOG_MODE=${GF_LOG_MODE}
-
-FROM grafana/grafana-oss:${VERSION}
 
 ENV \
     GF_INSTALL_PLUGINS=grafana-piechart-panel,grafana-worldmap-panel,grafana-clock-panel,grafana-simple-json-datasource
