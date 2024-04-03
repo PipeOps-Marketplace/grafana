@@ -25,8 +25,5 @@ ENV GF_PATHS_DATA='/var/lib/grafana'
 # Make the directory writable
 USER root
 RUN mkdir -p /var/lib/grafana && \
-    chown -R /var/lib/grafana && \
+    chown -R grafana:grafana /var/lib/grafana && \
     chmod -R 777 /var/lib/grafana
-
-# Switch back to the grafana user
-USER grafana
