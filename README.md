@@ -10,3 +10,4 @@ Grafana is a multi-platform, feature rich metrics dashboard and graph editor for
 * Grafana with automated setup
 * Grafana UI
 * Password Authentication (Set username & password in environment variables)
+* Persisted data with SQLite
